@@ -27,4 +27,6 @@ public class JoinDto {
         return new Join(id, userId, userPw, userName, userNickname, userEmail);
     }
 
+
+
 }

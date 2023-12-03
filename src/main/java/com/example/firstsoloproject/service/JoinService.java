@@ -13,12 +13,14 @@ public class JoinService {
     @Autowired
     private JoinRepository joinRepository;
 
-    public Join joinUser(JoinDto joinDto) {
+
+    public Join save(JoinDto joinDto) {
         Join join = joinDto.toEntity();
+        log.info(join.toString());
         if(join.getId()!=null){
             return null;
         }
         return joinRepository.save(join);
-    }
 
+    }
 }
