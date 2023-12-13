@@ -1,0 +1,16 @@
+{{>layouts/header}}
+
+<form id="logForm" class="container" action="/userLogin" method="post">
+<div class="mb-3">
+    <label class="form-label">ID</label>
+    <input type="text" class="form-control" name="userid">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">PW</label>
+    <input type="text" class="form-control" name="pw">
+</div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+    <a href="/join">회원가입</a>
+{{>layouts/footer}}

@@ -1,0 +1,21 @@
+{{>layouts/header}}
+
+<form name="form" method="post" action="/articles/create" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label">제목</label>
+        <input type="text" class="form-control" name="title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">내용</label>
+        <textarea class="form-control" rows="3" name="content"></textarea>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">첨부사진</label>
+        <input type="file" class="form-control" multiple="multiple" name="files">
+
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/main">Back</a>
+</form>
+
+{{>layouts/footer}}
