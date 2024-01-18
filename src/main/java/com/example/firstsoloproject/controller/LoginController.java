@@ -11,7 +11,7 @@ public class LoginController {
 
     @GetMapping("/login")
     public String join(){
- 
+
         return "/main/login";
     }
 
