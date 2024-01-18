@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 @Slf4j
 public class LoginController {
-
+//test code
     @GetMapping("/login")
     public String join(){
 
