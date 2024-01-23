@@ -27,5 +27,8 @@ public class Article {
     @Column
     private String content;
 
+    @Column
+    private int view;
+
 
 }
