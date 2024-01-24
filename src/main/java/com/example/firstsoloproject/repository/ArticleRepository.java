@@ -19,4 +19,6 @@ public interface ArticleRepository extends JpaRepository<Article, Long> {
     @Query("update Article p set p.view = p.view + 1 where p.id = :id")
     int updateView(Long id);
 
+    List<Article> findByTitleContaining(String keyword);
+
 }

@@ -21,5 +21,23 @@
     </tbody>
 </table>
 
+<div class="article-back">
+    <a href="/main" role="button">back</a>
+</div>
 
+
+<!--페이징 버튼 처리-->
+{{#hasPrev}}
+    <a href="?page={{previous}}" role="button" class="btn btn-lg bi bi-caret-left-square-fill"><</a>
+{{/hasPrev}}
+{{^hasPrev}}
+    <a href="?page={{previous}}" role="button" class="btn btn-lg bi bi-caret-left-square-fill disabled"><</a>
+{{/hasPrev}}
+
+{{#hasNext}}
+    <a href="?page={{next}}" role="button" class="btn btn-lg bi bi-caret-right-square-fill">></a>
+{{/hasNext}}
+{{^hasNext}}
+    <a href="?page={{next}}" role="button" class="btn btn-lg bi bi-caret-right-square-fill disabled">></a>
+{{/hasNext}}
 {{>layouts/footer}}
